@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Myanmar";
+    src: url("../fonts/Khyay-Regular.ttf") format("ttf"),
+   }
+@import './base/_normalize.scss';
+
+@import './variables/constants';
+@import './variables/placeholders';
+@import './variables/mixins';
+
+@import './base/_base.scss';

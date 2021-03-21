@@ -1,0 +1,30 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $color-bg;
+    @extend %font-family;
+    color: $color-text;
+    position: relative;
+}
+
+.container {
+    max-width: 1520px;
+    width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+h2 {
+    @include font(4.8rem, 6.5rem);
+}
+
+h3 {
+    @include font(3.2rem, 4.3rem);
+}
