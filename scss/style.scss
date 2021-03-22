@@ -2,10 +2,23 @@
     font-family: "Myanmar";
     src: url("../fonts/Khyay-Regular.ttf") format("ttf"),
    }
-@import './base/_normalize.scss';
 
 @import './variables/constants';
 @import './variables/placeholders';
 @import './variables/mixins';
 
-@import './base/_base.scss';
+@import './base/normalize.scss';
+@import './base/base.scss';
+@import './base/buttons.scss';
+@import './base/icons.scss';
+
+@import './layouts/columns.scss';
+@import './layouts/header.scss';
+@import './layouts/footer.scss';
+
+@import './components/main-screen.scss';
+@import './components/brands.scss';
+@import './components/albums.scss';
+@import './components/playlist.scss';
+@import './components/reasons.scss';
+@import './components/contacts.scss';

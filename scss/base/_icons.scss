@@ -1,0 +1,14 @@
+.icon {
+    display: inline-block;
+    cursor: pointer;
+    &_app-store {
+        background-image: url('../img/app-store.svg');
+        width: 144px; 
+        height: 47px;
+    }
+    &_google-play {
+        background-image: url('../img/google-play.svg');
+        width: 166px; 
+        height: 49px;
+    }
+}

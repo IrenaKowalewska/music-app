@@ -1,0 +1,28 @@
+.main-screen {
+    background-image: url('../img/main-bg.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    min-height: calc(100vh - 120px);
+    padding-top: 9%;
+}
+
+.main-screen__content {
+    max-width: 610px;
+}
+
+.main-screen__title {
+    margin-bottom: 38px;
+}
+
+.main-screen__icons {
+    margin-bottom: 25px;
+}
+
+.main-screen_try {
+    width: 211px;
+    margin-bottom: 25px;
+}
+
+.main-screen__icons > * {
+    margin-right: 19px;
+}

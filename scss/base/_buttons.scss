@@ -1,0 +1,23 @@
+.button {
+    @extend %font-family;
+    @include font(2.0rem, 2.4rem);
+    padding: 15px 16px;
+    border-radius: 4px;
+    width: 160px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-button-hover;
+        border: 1px solid $color-button-hover;
+    }
+    &_bordered {
+        width: 145px;
+        background-color: inherit;
+        border: 1px solid $color-main;
+    }
+    &_colored {
+        border: 1px solid $color-main;
+        background-color: $color-main;
+    }
+}

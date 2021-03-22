@@ -1,0 +1,26 @@
+.albums {
+    padding: 80px 0;
+}
+
+.albums__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.albums__imgs {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+}
+
+.albums__img {
+    img {
+        border-radius: 10px;
+    }
+}
+
+.info-block {
+    flex-basis: 40%;
+}
