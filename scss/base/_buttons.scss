@@ -6,7 +6,7 @@
     width: 160px;
     border: none;
     outline: none;
-    cursor: pointer;
+    @extend %pointer;
     &:hover {
         background-color: $color-button-hover;
         border: 1px solid $color-button-hover;

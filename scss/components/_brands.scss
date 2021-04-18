@@ -4,8 +4,9 @@
 }
 
 .brands__icons {
+    padding: 0 23px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }

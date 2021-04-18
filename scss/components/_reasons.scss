@@ -1,0 +1,19 @@
+.reasons {
+    padding: 56px 0 67px;
+    box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+}
+
+.reasons__layout {
+    max-width: 1362px;
+    width: 95%;
+}
+
+.reasons__col {
+    max-width: 610px;
+}
+
+.reasons__text {
+    @include font(2.4rem, 3.2rem, normal, 400);
+    color: $color-text;
+    opacity: 0.5;
+}

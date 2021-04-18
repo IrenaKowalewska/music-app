@@ -1,14 +1,40 @@
+%background-repeat {
+    background-repeat: no-repeat;
+}
+@mixin icon-size($width, $height) {
+    width: $width; 
+    height: $height;
+}
 .icon {
     display: inline-block;
-    cursor: pointer;
+    @extend %pointer;
     &_app-store {
         background-image: url('../img/app-store.svg');
-        width: 144px; 
-        height: 47px;
+        @include icon-size(144px, 47px);
     }
     &_google-play {
         background-image: url('../img/google-play.svg');
-        width: 166px; 
-        height: 49px;
+        @include icon-size(166px, 49px);
+    }
+    &_arrow {
+        background-image: url('../img/arrow-icon.svg');
+        @extend %background-repeat;
+        @include icon-size(15px, 32px);
+        margin-right: 20px;
+    }
+    &_social-instagram{
+        background-image: url('../../img/social/instagram.svg');
+        @extend %background-repeat;
+        @include icon-size(32px, 32px);
+    }
+    &_social-facebook {
+        background-image: url('../../img/social/facebook.svg');
+        @extend %background-repeat;
+        @include icon-size(17px, 32px);
+    }
+    &_social-twitter{
+        background-image: url('../../img/social/twitter.svg');
+        @extend %background-repeat;
+        @include icon-size(32px, 26px);
     }
 }

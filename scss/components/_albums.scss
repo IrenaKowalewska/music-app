@@ -24,3 +24,23 @@
 .info-block {
     flex-basis: 40%;
 }
+
+.info-block__title {
+    margin-bottom: 32px;
+}
+
+.info-block__subtitle {
+    @include font(2.4rem, 3.2rem);
+    margin-bottom: 32px;
+    opacity: 0.5;
+}
+
+.button-link {
+    display: inline-flex;
+    @include font(2.4rem, 2.4rem);
+    text-decoration: none;
+    color: $color-main;
+    &:hover {
+        color: $color-button-hover;
+    }
+}

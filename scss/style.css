@@ -6,6 +6,10 @@
   font-family: "Myanmar", "Verdana", sans-serif;
 }
 
+.nav__link, .icon, .button {
+  cursor: pointer;
+}
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -430,7 +434,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: #1B262C;
   color: #F9F8FF;
   position: relative;
@@ -472,7 +476,6 @@ h3 {
   width: 160px;
   border: none;
   outline: none;
-  cursor: pointer;
 }
 .button:hover {
   background-color: #9a96d4;
@@ -488,9 +491,12 @@ h3 {
   background-color: #7971E9;
 }
 
+.icon_social-twitter, .icon_social-facebook, .icon_social-instagram, .icon_arrow {
+  background-repeat: no-repeat;
+}
+
 .icon {
   display: inline-block;
-  cursor: pointer;
 }
 .icon_app-store {
   background-image: url("../img/app-store.svg");
@@ -501,6 +507,27 @@ h3 {
   background-image: url("../img/google-play.svg");
   width: 166px;
   height: 49px;
+}
+.icon_arrow {
+  background-image: url("../img/arrow-icon.svg");
+  width: 15px;
+  height: 32px;
+  margin-right: 20px;
+}
+.icon_social-instagram {
+  background-image: url("../../img/social/instagram.svg");
+  width: 32px;
+  height: 32px;
+}
+.icon_social-facebook {
+  background-image: url("../../img/social/facebook.svg");
+  width: 17px;
+  height: 32px;
+}
+.icon_social-twitter {
+  background-image: url("../../img/social/twitter.svg");
+  width: 32px;
+  height: 26px;
 }
 
 .layout-2-col {
@@ -550,7 +577,6 @@ h3 {
   font-weight: normal;
   font-size: 2.4rem;
   line-height: 3.2rem;
-  cursor: pointer;
 }
 
 .header__buttons {
@@ -561,6 +587,69 @@ h3 {
 }
 .header__buttons > *:not(:last-child) {
   margin-right: 24px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__content {
+  padding: 48px 0 130px;
+  background-color: #293942;
+}
+
+.footer__social {
+  padding: 34px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social > * {
+  margin: 0 100px;
+}
+
+.footer__logo {
+  flex-basis: 30%;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 57%;
+}
+
+.nav-block {
+  max-width: 320px;
+  width: 96%;
+}
+
+.nav-block__title {
+  margin: 0 0 27px;
+}
+
+.list__link a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #F9F8FF;
+  text-decoration: none;
+}
+
+.list__link {
+  margin-bottom: 23px;
+}
+
+.footer__text {
+  margin-top: 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #F9F8FF;
+  opacity: 0.5;
 }
 
 .main-screen {
@@ -598,9 +687,10 @@ h3 {
 }
 
 .brands__icons {
+  padding: 0 23px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -629,20 +719,62 @@ h3 {
   flex-basis: 40%;
 }
 
-.contacts__container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+.info-block__title {
+  margin-bottom: 32px;
 }
 
-.contacts__logo {
-  flex-basis: 30%;
+.info-block__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 32px;
+  opacity: 0.5;
 }
 
-.contacts__nav {
+.button-link {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: #7971E9;
+}
+.button-link:hover {
+  color: #9a96d4;
+}
+
+.playlist {
+  padding: 80px 0 80px;
+  box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+}
+
+.playlist__imgs {
   display: flex;
-  justify-content: space-between;
-  flex-basis: 57%;
+}
+
+.reasons {
+  padding: 56px 0 67px;
+  box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+}
+
+.reasons__layout {
+  max-width: 1362px;
+  width: 95%;
+}
+
+.reasons__col {
+  max-width: 610px;
+}
+
+.reasons__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #F9F8FF;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
