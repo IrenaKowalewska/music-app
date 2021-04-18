@@ -13,6 +13,12 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     gap: 30px;
+    @include media-laptop  {
+        margin: 0 auto;
+    }
+    @include media-tablet {
+        grid-template-columns: 48% 48%;
+    }
 }
 
 .albums__img {
@@ -23,6 +29,9 @@
 
 .info-block {
     flex-basis: 40%;
+    @include media-laptop  {
+        flex-basis: 100%;
+    }
 }
 
 .info-block__title {

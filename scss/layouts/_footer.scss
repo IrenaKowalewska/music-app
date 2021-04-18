@@ -2,6 +2,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include media-laptop-small  {
+        flex-direction: column;
+    }
 }
 
 .footer__content {
@@ -15,17 +18,27 @@
     justify-content: center;
     > * {
         margin: 0 100px;
+        @include media-tablet {
+            margin: 0 20px;
+        }
     }
+    
 }
 
 .footer__logo {
     flex-basis: 30%;
+    @include media-laptop-small  {
+        width: 50%;
+    }
 }
 
 .footer__nav {
     display: flex;
     justify-content: space-between;
     flex-basis: 57%;
+    @include media-laptop-small  {
+        width: 100%;
+    }
 }
 
 .nav-block {

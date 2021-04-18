@@ -4,10 +4,18 @@
     background-position: center right;
     min-height: calc(100vh - 120px);
     padding-top: 9%;
+    @include media-tablet  {
+        padding-bottom: 9%;
+        background-position: center center;
+
+    }
 }
 
 .main-screen__content {
     max-width: 610px;
+    @include media-tablet {
+        max-width: 355px;
+    }
 }
 
 .main-screen__title {

@@ -1,5 +1,8 @@
 html {
     font-size: 10px;
+    @include media-tablet {
+        font-size: 7px;
+    }
 }
 
 body {
@@ -11,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 1520px;
+    max-width: $content-width;
     width: 90%;
     margin: 0 auto;
 }
