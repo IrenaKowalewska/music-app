@@ -17,3 +17,18 @@
     color: $color-text;
     opacity: 0.5;
 }
+
+.reasons__subheader {
+    position: relative;
+    padding-left: 16px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-main;
+        border-radius: 2.5px;
+        width: 5px;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}

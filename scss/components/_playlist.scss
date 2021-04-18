@@ -6,3 +6,10 @@
 .playlist__imgs {
     display: flex;
 }
+
+.playlist__img {
+    &:hover {
+        @extend %pointer;
+        transform: scale(1.02);
+    }
+}

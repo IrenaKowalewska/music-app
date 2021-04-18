@@ -6,7 +6,7 @@
   font-family: "Myanmar", "Verdana", sans-serif;
 }
 
-.nav__link, .icon, .button {
+.playlist__img:hover, .nav__link, .icon, .button {
   cursor: pointer;
 }
 
@@ -754,6 +754,10 @@ h3 {
   display: flex;
 }
 
+.playlist__img:hover {
+  transform: scale(1.02);
+}
+
 .reasons {
   padding: 56px 0 67px;
   box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
@@ -775,6 +779,21 @@ h3 {
   line-height: 3.2rem;
   color: #F9F8FF;
   opacity: 0.5;
+}
+
+.reasons__subheader {
+  position: relative;
+  padding-left: 16px;
+}
+.reasons__subheader::before {
+  content: "";
+  position: absolute;
+  background-color: #7971E9;
+  border-radius: 2.5px;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
